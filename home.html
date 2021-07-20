@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booklovers - Your Favorite Books</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link href="css/home_js_styles.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/media_queries.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="kontainer">
+		<div class="preheader">
+			<p class="preheader_text">Welcome to our Publishing House!</p>
+			<div class="links">
+				<a href="#" id="login">Login</a>
+				<a href="#" id="sign">Sign-up</a>
+			</div>
+			<div id="popup_login">
+			</div>
+			<div id="popup_sign">
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="logo">
+				<a href="home.html" class="logo_link">
+					<img src="img/logo.png" alt="book_lovers">
+					<p class="logo-subtitle">Your Favorite Bookshelf!</p>
+				</a>
+			</div>
+
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li class="list-item"><a href="home.html" class="link">HOME</a></li>
+					<li class="list-item"><a href="books.html" class="link ">BOOKS</a></li>
+					<li class="list-item"><a href="about.html" class="link ">ABOUT</a></li>
+					<li class="list-item"><a href="contact.html" class="link ">CONTACTS</a></li>
+				</ul>
+			</nav>
+
+			<span id="items_counter"></span>
+
+			<div class="basket">
+				<a href="#" id="show_basket" onclick="showBasket()"><img src="img/basket.svg" alt="basket"></a>
+				<div id="basket_books-cart">
+					<div class="basket_cart">
+						<p class="basket_empty"></p>
+						<ul class="basket_cart-list">
+							
+						</ul>
+					</div>
+					<div id="basket_cart-total">
+							
+					</div>
+				</div>
+			</div>
+
+			<div class="search">
+				<a href="#"><img src="img/search.svg" alt="search"></a>
+			</div>
+		</div>
+
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="//booklovers.ancorathemes.com/wp-content/uploads/2016/02/slide1-1.jpg" class="d-block w-100" alt="obraz1" style="height: 350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="//booklovers.ancorathemes.com/wp-content/uploads/2016/02/slide2-1.jpg" class="d-block w-100" alt="obraz2" style="height: 350px">
+                </div>
+                <div class="carousel-item">
+                    <img src="//booklovers.ancorathemes.com/wp-content/uploads/2016/02/slide3.jpg" class="d-block w-100" alt="obraz3" style="height: 350px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+        </div>
+
+        <div class="discover-books-wrap">
+        	<p class="discover-books_title"><em>Discover</em> Your Next Books</p>
+        	<div class="discover-books_nav">
+        		
+        	</div>
+        	<div class="discover-books">
+        		
+        	</div>
+        	<a href="books.html" id="more">DISCOVER MORE BOOKS</a>
+        </div>
+
+        <div class="sign-up">
+        	<h1 class="sign-up_text"><em>Stay In Touch</em> with Our<br>Updates</h1>
+        	<div class="sign-up_form">
+	        	<input id="sign-up_input" type="email" placeholder="Enter Your Email Here"><button id="sign-up_btn">SIGN UP</button>
+	        	<div id="info"></div>
+        	</div>
+        </div>
+
+        <footer class="footer">
+        	<div class="footer-logo-inner">
+	        	<div class="footer-logo">
+	        		<a href="home.html" class="logo_link">
+						<img src="img/logo.png" alt="book_lovers">
+						<p class="logo-subtitle">Your Favorite Bookshelf!</p>
+					</a>
+					<p class="logo-description">Our mission to give the customers opportunity to enjoy high-quality services to order and receive the best books. Choose your favorite book with us!</p>
+	        	</div>
+	        	<div class="follow">
+	        		<h2>FOLLOW US</h2>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_facebook">	  
+		        			<img src="img/facebook.svg" alt="facebook">
+		        		</a>
+	        		</div>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_twitter">
+		        			<img src="img/twitter.svg" alt="twitter">
+		        		</a>
+	        		</div>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_instagram">	  
+		        			<img src="img/instagram.svg" alt="instagram">
+		        		</a>
+	        		</div>
+	        	</div>
+        	</div>
+
+        	<div class="find">
+        		<h2><a href="#">FIND</a></h2>
+        		<ul class="find-list">
+        			<li class="find-list_item">
+        				<a href="about.html">About us</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Contact us</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="books.html">Cancellations</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="home.html">Returns</a>
+        			</li>
+        		</ul>
+        	</div>
+
+        	<div class="shop">
+        		<h2><a href="#">SHOP</a></h2>
+        		<ul class="shop-list">
+        			<li class="shop-list_item">
+        				<a href="books.html" >My orders</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="books.html">Shop Collections</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Get Help</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">FAQ</a>
+        			</li>
+        		</ul>
+        	</div>
+
+        	<div class="contacts">
+        		<h2>CONTACT INFO</h2>
+        		<div class="contact-info">
+        			<span>Address: </span> Boryspil, Jasna7<br>
+        			<span>Phone: </span> <a href="#">098-076-68-44</a><br>
+        			<span>Email: </span> <a href="#">y.soliuk02@gmail.com</a>
+        		</div>
+        	</div>
+
+        	<div class="copyright">&copy;YS</div>
+        </footer>
+	</div>
+	
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

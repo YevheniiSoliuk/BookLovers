@@ -1,0 +1,672 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Przednagłowek początek*/
+.preheader {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: #f1f1f1;
+	color: grey;
+	box-sizing: border-box;
+	padding: 0 50px 0 50px;
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.links {
+	width: 78%;
+	text-align: right;
+}
+
+.preheader a {
+	text-decoration: none;
+	color: grey;
+	padding-left: 10px;
+}
+
+.preheader a:hover {
+	color: #de3241;
+	transition:  all ease .1s
+}
+/*Przednagłowek koniec*/
+
+
+/*Formularz do logowania i rejestracji początek*/
+#popup_login, #popup_sign{
+	display: flex;
+    position: absolute;
+    width: 300px;
+    height: 0;
+    background: #fff;
+    border: 1px #fff solid;
+    box-sizing: border-box;
+    top: 50px;
+    right: 240px;
+    visibility: hidden;
+}
+
+#popup_sign {
+	width: 70%;
+}
+
+#popup_login.visible,
+#popup_sign.visible {
+	display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 240px;
+    padding: 40px 10px 20px 10px;
+    background: #fff;
+    border: 1px lightgrey solid;
+    box-sizing: border-box;
+    top: 25px;
+    right: 440px;
+    visibility: visible;
+}
+
+#popup_sign.visible {
+	width: 70%;
+	height: 600px;
+	right: 190px;
+}
+
+.popup_close::after {
+	content: '\2715';
+	display: block;
+	position: absolute;
+	line-height: 1em;
+	width: 20px;
+	height: 20px;
+	font-weight: 400;
+	color: #ccc;
+	right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.sign_form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sign_form label {
+	display: block;
+    text-align: left;
+    margin-left: 22px;
+}
+
+.first_part,
+.second_part {
+	width: 50%;
+	padding: 5px;
+}
+
+.login_field, 
+.sign_field {
+	width: 90%;
+	padding: 10px 15px 10px 15px;
+	margin-bottom: 10px;
+	background-color: #f5f5f4;
+	color:  gray;
+	border: 1px #f5f5f4 solid;
+}
+
+.sign_field {
+	display: block;
+	margin-left: 22px;
+	width: 90%;
+	text-align: left;
+}
+
+#genre_field {
+	height: 127px;
+	padding-top: 30px;
+}
+
+.sex {
+	margin-left: 40px;
+}
+
+.login_btn,
+.sign_btn,
+.reset_btn,
+.pay_btn {
+	width: 90%;
+    height: 40px;
+    font-weight: 700;
+    margin: 5px auto 68px auto;
+    background-color: #000;
+    color: #fff;
+    border: 2px #000 solid;
+    border-radius: 3px;
+}
+
+.sign_btn,
+.reset_btn,
+.pay_btn {
+	margin-bottom: 10px;
+	width: 90%;
+}
+
+.login_btn:hover,
+.sign_btn:hover,
+.reset_btn:hover,
+.pay_btn:hover {
+	background-color: #fff;
+	color:  #000;
+	transition: all ease 0.5s;
+}
+/*Formularz do logowania i rejestracji koniec*/
+
+
+/*Nagłówek początek*/
+.header {
+	display: flex;
+	position: sticky;
+	width: 100%;
+	height: 100px;
+	padding: 0 50px 0 50px;
+	margin-top: 30px;
+	background: #ffffff;
+	box-sizing: border-box;
+	box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.logo {
+	width: 210px;
+	height: 52px;
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+
+.logo_link {
+	text-decoration: none;
+	color:  #797979;
+	font-family: "PT Sans", sans-serif;
+}
+
+.logo_link:hover{
+	color:  #797979;
+}
+
+.logo-subtitle {
+	margin-left: 10px;
+}
+
+.navbar {
+	margin: 25px 0 25px 200px;
+	margin-right: 1em;
+	padding-right: 1em;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding-right: 50px;
+	margin-right: 50px;
+}
+
+.list-item {
+	margin: 0 15px 0 15px;
+	font-family: "PT Sans", sans-serif;
+	font-weight:  600;
+	line-height: 1.45em;
+	font-size: 17px;
+}
+
+.list-item > a {
+	text-decoration: none;
+	color:  #000;
+	padding-bottom: 5px;
+}
+
+.list-item > a:hover, a.active {
+	color: #de3241;
+	border-bottom: 2px #de3241 solid;
+	transition:  all ease .1s
+}
+
+/*Kosz nagłówkowy początek*/
+.basket {
+	margin: 25px 25px 25px 140px;
+	color: grey;
+	width: 30px;
+}
+
+#basket_books-cart {
+	display: flex;
+    position: relative;
+    width: 320px;
+    height: 100px;
+    max-height: 367px;
+    background: #fff;
+    border: 1px #fff solid;
+    box-sizing: border-box;
+    top: 50px;
+    right: 240px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+#basket_books-cart.visible {
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    background: #fff;
+    border: 1px lightgrey solid;
+    box-sizing: border-box;
+    top: 45px;
+    right: 240px;
+    z-index: 5;
+    visibility: visible;
+    overflow: auto;
+}
+
+.basket_empty {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.basket_cart-list {
+	padding-left: 0;
+}
+
+.basket_cart-total {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: right;
+}
+/*Kosz nagłówkowy koniec*/
+
+#items_counter {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #de3241;
+	color:  #fff;
+	right: 95px;
+    top: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.search {
+	margin: 25px 50px 25px 0;
+}
+/*Nagłówek koniec*/
+
+
+/*Zamówienie początek*/
+.sign_form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+#notes {
+	height: 127px;
+}
+
+.order_title {
+	width: 100%;
+	margin-bottom: 34px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-size: 3em;
+	line-height: 120%;
+	font-weight: 400;
+}
+
+.third_part {
+	width: 90%;
+}
+
+.order_table {
+	border: 1px solid lightgrey;
+	margin: 50px auto 50px auto;
+	text-align: center;
+	width: 90%;
+	border-collapse: separate;
+	border-radius: 5px;
+}
+
+thead {
+	color: #797979;
+	font-weight: 700;
+	font-size: 1.176em;
+	padding: 1.15em 0;
+}
+
+td {
+	border: 1px lightgrey solid;
+}
+
+.red {
+	color: #de3241;
+}
+
+.total {
+	font-weight: bold;
+}
+
+.sum {
+	font-weight: bold;
+}
+
+.error {
+	text-align: center;
+}
+/*Zamówienie koniec*/
+
+
+/*Sekcja książek strony głównej początek*/
+.discover-books-wrap {
+	box-sizing: border-box;
+	text-align: center;
+	margin:  50px 0 50px 0;
+}
+
+.discover-books_title  {
+	font-family: "Playfair Display", serif;
+	font-size: 3.5em;
+	line-height: 2em;
+	font-weight: 500;
+}
+
+.discover-books_title::after  {
+	content: ' ';
+	display: block;
+	position: relative;
+	border-top: 1px solid #222222;
+	width: 20%;
+	min-width: 2em;
+	height: 0;
+	left: 500px;
+	right: auto;
+	bottom: 0em;
+}
+
+.discover-books {
+	padding: 0 15px 0 15px;
+}
+
+#more {
+	display: block;
+	text-decoration: none;
+	padding-top: 8px;
+	width: 235px;
+	height: 45px;
+	font-weight: 700;
+	margin: 51px auto 68px auto;
+	background-color: #000;
+	color:  #fff;
+	border:  2px #000 solid;
+	border-radius: 3px;
+}
+
+.more_link {
+	text-decoration: none;
+	color: #fff;
+}
+
+#more:hover {
+	background-color: #fff;
+	color:  #000;
+	transition: all ease 0.5s;
+}
+/*Sekcja książek strony głównej koniec*/
+
+
+/*Sekcja otrymania powiadomień o aktualizacjach początek*/
+.sign-up {
+	background-color: #de3241;
+	height: 375px;
+	text-align: center;
+	color:  #fff;
+	box-shadow: inset 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1.sign-up_text {
+	display: inline-block;
+	font-family: "Playfair Display", serif;
+	font-size: 4em;
+	line-height: 1.3em;
+	font-weight: 400;
+	margin-top: 55px;
+	margin-bottom: 33px;
+}
+
+.sign-up_text::after {
+	content: ' ';
+	display: block;
+	position: relative;
+	border-top: 1px solid #fff;
+	width: 20%;
+	min-width: 2em;
+	height: 0;
+	left: 240px;
+	margin-top: 15px;
+}
+
+#sign-up_input {
+	height: 56px;
+	width: 400px;
+	border: 1px #fff solid;
+	padding-left: 20px;
+	font-size: 1.1em;
+	color: gray;
+}
+
+#sign-up_btn {
+	height: 56px;
+	width: 165px;
+	background-color: #000;
+	color: #fff;
+	border: 1px #000 solid;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+#sign-up_btn:hover {
+	background-color: #de3241;
+	color: #fff;
+	border: 1px #fff solid;
+	transition: all ease 0.3s;
+}
+/*Sekcja otrymania powiadomień o aktualizacjach koniec*/
+
+
+/*Stopka początek*/
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #eeeeee;
+	padding: 65px 34px 0 34px;
+	height: 500px;
+	text-align: center;
+}
+
+.footer-logo-inner {
+	width: 270px;
+}
+
+.footer-logo {
+	width: 270px;
+	text-align: left;
+	color: #797979;
+}
+
+.logo-description {
+	margin-top: 21px;
+}
+
+.follow {
+	margin-top: 40px;
+	text-align: left;
+}
+
+.follow h2 {
+	font-family: "PT Sans", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.follow h2::after {
+	content: ' ';
+	display: block;
+	position: relative;
+	border-top: 1px solid #797979;
+	width: 25%;
+	min-width: 2em;
+	height: 0;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.social-icon {
+	display: inline-block;
+	margin-top: 15px;
+	height: 34px;
+	width: 34px;
+	line-height: 34px;
+	margin: 1px;
+}
+
+.find, .shop {
+	width: 270px;
+	text-align: left;
+	color: #797979;
+	margin-left: 50px;
+}
+
+.find h2, .shop h2 {
+	font-family: "PT Sans", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.find h2::after, .shop h2::after {
+	content: ' ';
+	display: block;
+	position: relative;
+	border-top: 1px solid #797979;
+	width: 25%;
+	min-width: 2em;
+	height: 0;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+
+.find a, .shop a {
+	padding: 0 0 15px 10px;
+	text-decoration: none;
+	color:  #000;
+}
+
+.find a:hover, .shop a:hover {
+	color:  #de3241;
+	transition: all ease .3s;
+}
+
+.find-list, .shop-list {
+	list-style: none;
+	padding: 0;
+}
+
+.find-list_item,
+.shop-list_item {
+	margin-bottom: 7px;
+}
+
+.find-list_item a,
+.shop-list_item a {
+	padding-left: 7px;
+}
+
+.contacts {
+	width: 270px;
+	text-align: left;
+}
+
+.contacts h2 {
+	font-family: "PT Sans", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.contacts h2::after {
+	content: ' ';
+	display: block;
+	position: relative;
+	border-top: 1px solid #797979;
+	width: 25%;
+	min-width: 2em;
+	height: 0;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.contact-info {
+	overflow-wrap: break-word;
+	font-family: "PT Sans", sans-serif;
+	font-size: 1.1em;
+	color: #797979;
+	margin-bottom: 40px;
+}
+
+.contact-info span {
+	display: inline-block;
+	font-weight: bold;
+	color: #121212;
+	line-height: 2em;
+
+}
+
+.contact-info a {
+	text-decoration: none;
+	color: #797979;
+	font-weight: bold;
+}
+
+.contact-info a:hover {
+	color:  #de3241;
+	transition: all ease .3s;
+}
+
+.copyright {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "PT Sans", sans-serif;
+	font-size: 1.1em;
+	color: #797979;
+	border-top: 1px lightgray solid;
+}
+/*Stopka koniec*/

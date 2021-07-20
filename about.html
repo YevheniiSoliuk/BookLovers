@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booklovers - Your Favorite Books</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/about.css" type="text/css" />
+	<link href="css/media_queries.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="kontainer">
+		<div class="preheader">
+			<p class="preheader_text">Welcome to our Publishing House!</p>
+			<div class="links">
+				<a href="#" id="login">Login</a>
+				<a href="#" id="sign">Sign-up</a>
+			</div>
+			<div id="popup_login">
+			</div>
+			<div id="popup_sign">
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="logo">
+				<a href="home.html" class="logo_link">
+					<img src="img/logo.png" alt="book_lovers">
+					<p class="logo-subtitle">Your Favorite Bookshelf!</p>
+				</a>
+			</div>
+
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li class="list-item"><a href="home.html" class="link ">HOME</a></li>
+					<li class="list-item"><a href="books.html" class="link ">BOOKS</a></li>
+					<li class="list-item"><a href="about.html" class="link ">ABOUT</a></li>
+					<li class="list-item"><a href="contact.html" class="link ">CONTACTS</a></li>
+				</ul>
+			</nav>
+
+			<span id="items_counter"></span>
+
+			<div class="basket">
+				<a href="#" id="show_basket" onclick="showBasket()"><img src="img/basket.svg" alt="basket"></a>
+				<div id="basket_books-cart">
+					<div class="basket_cart">
+						<p class="basket_empty"></p>
+						<ul class="basket_cart-list">
+							
+						</ul>
+					</div>
+					<div id="basket_cart-total">
+							
+					</div>
+				</div>
+			</div>
+
+			<div class="search">
+				<a href="#"><img src="img/search.svg" alt="search"></a>
+			</div>
+		</div>
+
+		<div class="about_info">
+			<h1 class="about_title"><em>About</em> Us</h1>
+			<img src="http://booklovers.ancorathemes.com/wp-content/uploads/2016/02/slide-5.jpg" alt="image1">
+			<h5 class="about_subtitle">Our Mission</h5>
+			<p class="about_text">
+				Our mission is to foster a universal passion for reading by partnering with authors to help create stories and communicate ideas that inform, entertain, and inspire, and to connect them with readers everywhere. We are an international home to nearly 400 editorially and creatively independent publishing imprints.
+			</p>
+			<div class="about_images">
+				<img src="http://booklovers.ancorathemes.com/wp-content/uploads/2016/01/image-12.jpg" alt="image2">
+				<img src="http://booklovers.ancorathemes.com/wp-content/uploads/2016/01/image-11.jpg" alt="image3">
+			</div>
+			<h5 class="about_subtitle">What We Do</h5>
+			<p class="about_text">
+				By using our global reach, embracing new technologies, and collaborating with authors at every stage of the publishing process, from design and editorial, to sales and marketing, to production and distribution, we wish to provide them with the greatest platform possible. At the same time, we fiercely protect our authors’ intellectual property and champion freedom of expression, ensuring that their voices carry beyond the page and into the folds of societies and communities around the globe.Our professional team of publishing professionals is committed to helping authors realize their very best work and to finding innovative new ways of bringing stories and ideas to audiences worldwide.
+			</p>
+		</div>
+
+        <footer class="footer">
+        	<div class="footer-logo-inner">
+	        	<div class="footer-logo">
+	        		<a href="home.html" class="logo_link">
+						<img src="img/logo.png" alt="book_lovers">
+						<p class="logo-subtitle">Your Favorite Bookshelf!</p>
+					</a>
+					<p class="logo-description">Our mission to give the customers opportunity to enjoy high-quality services to order and receive the best books. Choose your favorite book with us!</p>
+	        	</div>
+	        	<div class="follow">
+	        		<h2>FOLLOW US</h2>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_facebook">	  
+		        			<img src="img/facebook.svg" alt="facebook">
+		        		</a>
+	        		</div>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_twitter">
+		        			<img src="img/twitter.svg" alt="twitter">
+		        		</a>
+	        		</div>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_instagram">	  
+		        			<img src="img/instagram.svg" alt="instagram">
+		        		</a>
+	        		</div>
+	        	</div>
+        	</div>
+
+        	<div class="find">
+        		<h2><a href="#">FIND</a></h2>
+        		<ul class="find-list">
+        			<li class="find-list_item">
+        				<a href="about.html">About us</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Contact us</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="books.html">Cancellations</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="about.html">Returns</a>
+        			</li>
+        		</ul>
+        	</div>
+
+        	<div class="shop">
+        		<h2><a href="#">SHOP</a></h2>
+        		<ul class="shop-list">
+        			<li class="shop-list_item">
+        				<a href="books.html" >My orders</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="books.html">Shop Collections</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Get Help</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">FAQ</a>
+        			</li>
+        		</ul>
+        	</div>
+
+        	<div class="contacts">
+        		<h2>CONTACT INFO</h2>
+        		<div class="contact-info">
+        			<span>Address: </span> Boryspil, Jasna7<br>
+        			<span>Phone: </span> <a href="#">098-076-68-44</a><br>
+        			<span>Email: </span> <a href="#">y.soliuk02@gmail.com</a>
+        		</div>
+        	</div>
+
+        	<div class="copyright">&copy;YS</div>
+        </footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

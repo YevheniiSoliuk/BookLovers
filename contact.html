@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booklovers - Your Favorite Books</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/contact.css" type="text/css" />
+	<link href="css/media_queries.css" rel="stylesheet" type="text/css"/>
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyAtdtGj2hqTUZQ7FdCLQEK2FmQdixq2_XY&sensor=false">
+	</script>
+</head>
+<body>
+	<div class="kontainer">
+		<div class="preheader">
+			<p class="preheader_text">Welcome to our Publishing House!</p>
+			<div class="links">
+				<a href="#" id="login">Login</a>
+				<a href="#" id="sign">Sign-up</a>
+			</div>
+			<div id="popup_login">
+			</div>
+			<div id="popup_sign">
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="logo">
+				<a href="home.html" class="logo_link">
+					<img src="img/logo.png" alt="book_lovers">
+					<p class="logo-subtitle">Your Favorite Bookshelf!</p>
+				</a>
+			</div>
+
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li class="list-item"><a href="home.html" class="link">HOME</a></li>
+					<li class="list-item"><a href="books.html" class="link ">BOOKS</a></li>
+					<li class="list-item"><a href="about.html" class="link ">ABOUT</a></li>
+					<li class="list-item"><a href="contact.html" class="link ">CONTACTS</a></li>
+				</ul>
+			</nav>
+
+			<span id="items_counter"></span>
+
+			<div class="basket">
+				<a href="#" id="show_basket" onclick="showBasket()"><img src="img/basket.svg" alt="basket"></a>
+				<div id="basket_books-cart">
+					<div class="basket_cart">
+						<p class="basket_empty"></p>
+						<ul class="basket_cart-list">
+							
+						</ul>
+					</div>
+					<div id="basket_cart-total">
+							
+					</div>
+				</div>
+			</div>
+
+			<div class="search">
+				<a href="#"><img src="img/search.svg" alt="search"></a>
+			</div>
+		</div>
+
+		<div class="contact_inner">
+			<div id="geo"></div>
+			<div id="map"></div>
+
+			<h2 class="contact_title">Contact Us</h2>
+			<div class="contactss">
+        		<div class="contacts-info">
+        			<div class="adress_field">
+        				<span>Address </span><br>Boryspil, Jasna 7<br>
+        			</div>
+        			<div class="adress_field">
+        				<span>We are open </span><br>Monday - Friday - 8 PM <br>
+        			</div>
+        			<div class="adress_field">
+        				<span>Phone: </span> <br><a href="#">098-076-68-44</a><br>
+        			</div>
+        			<div class="adress_field">
+        				<span>Email </span> <br><a href="#">y.soliuk02@gmail.com</a>
+        			</div>
+
+        			<div class="contact-icon">
+			        	<a href="#" target="_blank" class="social_icons social_facebook">	  
+			        		<img src="img/facebook.svg" alt="facebook">
+			        	</a>
+		        	</div>
+		        	<div class="contact-icon">
+			        	<a href="#" target="_blank" class="social_icons social_twitter">
+			        		<img src="img/twitter.svg" alt="twitter">
+			        	</a>
+		        	</div>
+		        	<div class="contact-icon">
+			        	<a href="#" target="_blank" class="social_icons social_instagram">	  
+			        		<img src="img/instagram.svg" alt="instagram">
+			        	</a>
+		        	</div>
+        		</div>
+        		<form action="mailto:y.soliuk02@gmail.com" method="post" class="message" onsubmit="return verify()">
+        			<input id="name" class="message_field" placeholder="Name*">
+        			<div id="name_error" class="error"></div>
+        			<input id="email" class="message_field" placeholder="Email*">
+        			<div id="email_error" class="error"></div>
+        			<input type="text" id="subject" class="message_field" placeholder="Subject">
+        			<div id="subject_error" class="error"></div>
+        			<textarea id="mes" class="message_text" placeholder="Message"></textarea>
+        			<div id="mes_error" class="error"></div>
+        			<input type="submit" class="message_btn" value="SEND MESSAGE">
+        		</form>
+        	</div>
+		</div>
+
+        <footer class="footer">
+        	<div class="footer-logo-inner">
+	        	<div class="footer-logo">
+	        		<a href="home.html" class="logo_link">
+						<img src="img/logo.png" alt="book_lovers">
+						<p class="logo-subtitle">Your Favorite Bookshelf!</p>
+					</a>
+					<p class="logo-description">Our mission to give the customers opportunity to enjoy high-quality services to order and receive the best books. Choose your favorite book with us!</p>
+	        	</div>
+	        	<div class="follow">
+	        		<h2>FOLLOW US</h2>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_facebook">	  
+		        			<img src="img/facebook.svg" alt="facebook">
+		        		</a>
+	        		</div>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_twitter">
+		        			<img src="img/twitter.svg" alt="twitter">
+		        		</a>
+	        		</div>
+	        		<div class="social-icon">
+		        		<a href="#" target="_blank" class="social_icons social_instagram">	  
+		        			<img src="img/instagram.svg" alt="instagram">
+		        		</a>
+	        		</div>
+	        	</div>
+        	</div>
+
+        	<div class="find">
+        		<h2><a href="#">FIND</a></h2>
+        		<ul class="find-list">
+        			<li class="find-list_item">
+        				<a href="about.html">About us</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Contact us</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="books.html">Cancellations</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Returns</a>
+        			</li>
+        		</ul>
+        	</div>
+
+        	<div class="shop">
+        		<h2><a href="#">SHOP</a></h2>
+        		<ul class="shop-list">
+        			<li class="shop-list_item">
+        				<a href="books.html" >My orders</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="books.html">Shop Collections</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">Get Help</a>
+        			</li>
+        			<li class="find-list_item">
+        				<a href="contact.html">FAQ</a>
+        			</li>
+        		</ul>
+        	</div>
+
+        	<div class="contacts">
+        		<h2>CONTACT INFO</h2>
+        		<div class="contact-info">
+        			<span>Address: </span> Boryspil, Jasna7<br>
+        			<span>Phone: </span> <a href="#">098-076-68-44</a><br>
+        			<span>Email: </span> <a href="#">y.soliuk02@gmail.com</a>
+        		</div>
+        	</div>
+
+        	<div class="copyright">&copy;YS</div>
+        </footer>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/contact.js"></script>
+</body>
+</html>

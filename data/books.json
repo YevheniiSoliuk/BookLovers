@@ -1,0 +1,58 @@
+[
+	{
+		"id":"0",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book2.jpg",
+		"title":"The forest",
+		"author":"Allan Green",
+		"price":"15.05"
+	},
+	{
+		"id":"1",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book3.jpg",
+		"title":"The Son",
+		"author":"Angelika Glow",
+		"price":"10.20"
+	},
+	{
+		"id":"2",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book4.jpg",
+		"title":"Life in the garden",
+		"author":"Antony Barton",
+		"price":"11.45"
+	},
+	{
+		"id":"3",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book5.jpg",
+		"title":"The long road to the deep Silence",
+		"author":"Richard Mann",
+		"price":"15.99"
+	},
+	{
+		"id":"4",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book12.jpg",
+		"title":"It's a really strange story",
+		"author":"Burt Geller",
+		"price":"10.55"
+	},
+	{
+		"id":"5",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/books7.jpg",
+		"title":"Strom",
+		"author":"Richard Mann",
+		"price":"10.20"
+	},
+	{
+		"id":"6",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book11-340x520.jpg",
+		"title":"Cooking with love",
+		"author":"Julia Green",
+		"price":"20.55"
+	},
+	{
+		"id":"7",
+		"img":"http://booklovers.ancorathemes.com/wp-content/uploads/2016/04/book1-340x520.jpg",
+		"title":"Let the sun shine",
+		"author":"Angelika Glow",
+		"price":"14.99"
+	}
+]

@@ -1,0 +1,258 @@
+.books-inner {
+	display: flex;
+	margin: 50px 50px 100px 50px;
+	flex-wrap: wrap;
+}
+
+.books-aside {
+	width: 23%;
+}
+
+.books-cart h2, 
+.books-filter h2, 
+.books-categories h2 {
+	background-color: #de3241;
+	color:  #fff;
+	padding: 20px 17px 20px 17px;
+	margin-top: 50px;
+	margin-bottom: 34px;
+	text-align: left;
+	font-family: "PT Sans", sans-serif;
+	line-height: 13px;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+
+/*Kosz początek*/
+.books-cart h2 {
+	margin-top: 0;
+}
+
+.cart, .cart-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	color: grey;
+	padding-left: 0;
+}
+
+#cart_item {
+	border-bottom:  1px lightgrey solid;
+	margin-bottom: 20px;
+}
+
+.cart-book-image {
+	height: 120px;
+	width: 79px;
+	margin: 0 25px 15px 0;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cart-book-info {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: left;
+	width: 55%;
+}
+
+.cart-book-info span {
+	width: 10%;
+}
+
+.cart-book-info span::before {
+	content:  "\2612";
+	display: block;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	color: #de3241;
+	cursor:  pointer;
+	line-height: 13px;
+}
+
+.cart-book-title {
+	width: 90%;
+	text-decoration: none;
+	font-family: "PT Sans", serif;
+	font-weight:  600;
+	line-height: 1.45em;
+	font-size: 17px;
+	color: #000;
+}
+
+.cart-book-title:hover {
+	color: #de3241;
+	transition:  all ease .1s
+}
+
+.cart-book-price {
+	color: #de3241;
+	font-family: "PT Sans", sans-serif;
+	font-weight:  600;
+	line-height: 1.5em;
+	font-size: 15px;
+}
+
+.cart-book-price em {
+	color: #000;
+	font-style: normal;
+	font-family: "PT Sans", serif;
+	font-weight:  600;
+	line-height: 1.5em;
+	font-size: 15px;
+}
+
+.cart-total {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: right;
+}
+
+.total-price {
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.total-price em{
+	font-style: normal;
+	font-size: 1.4em;
+	font-weight: 500;
+	color: #de3241;
+}
+
+.btn {
+	height: 39px;
+	width: 45%;
+	background-color: #de3241;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	font-family: "PT Sans", sans-serif;
+	font-size: .9em;
+	font-weight: 600;
+	border: 1px #de3241 solid;
+	border-radius: 5%;
+}
+
+.btn:hover {
+	background-color: #b52733;
+	border-color: #b52733;
+}
+/*Kosz koniec*/
+
+
+/*Filtr cenowy początek*/
+.books-filter {
+	text-align: right;
+}
+
+.from, .to {
+	width: 40%;
+	padding: 5px;
+	margin: 5px;
+	border: 1px #000 solid;
+	border-radius: 2%;
+}
+
+#filter-btn {
+	height: 39px;
+	width: 92px;
+	background-color: #de3241;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	font-family: "PT Sans", sans-serif;
+	font-size: .9em;
+	font-weight: 600;
+	border: 1px #de3241 solid;
+	border-radius: 5%;
+}
+
+#filter-btn:hover {
+	background-color: #b52733;
+	border-color: #b52733;
+}
+/*Filtr cenowy koniec*/
+
+
+/*Kategorie książek początek*/
+.books-categories_list{
+  list-style: none; 
+  padding: 0;
+}
+
+.books-categories_list .books-categories_list-item::before {
+  content: '\2192'; 
+  color: red;
+  font-weight: 700;
+  font-size: 1.4em;
+  display: inline-block;
+  width: 1.1em;
+}
+
+.books-categories_list-item a {
+	text-decoration: none;
+	color:  #000;
+}
+
+.books-categories_list-item a:hover {
+	color:  #de3241;
+	transition: all ease .3s;
+}
+/*Kategorie książek koniec*/
+
+
+/*Książki do wyboru początek*/
+.books-content {
+	width: 70%;
+	margin-left: 7%;
+}
+
+.book {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.book:nth-child(6n) {
+	padding-right: 30px;
+}
+
+.book-image {
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+h3.book-title {
+	height: 45px;
+}
+
+.book-author {
+	margin-top: 30px;
+}
+
+#book_add {
+	width: 137px;
+	height: 39px;
+	background-color: #000;
+	color: #fff;
+	padding: 9px 15px 9px 15px;
+	border: 1px #000 solid;
+	border-radius: 3px;
+	font-family: "PT Sans", sans-serif;
+	font-size: .9em;
+	font-weight: 600;
+}
+
+#book_add:hover {
+	background-color: #b52733;
+	border-color: #b52733;
+}
+/*Książki do wyboru koniec*/

@@ -1,0 +1,77 @@
+.books-navbar {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 34px;
+}
+
+.books-nav-list {
+	margin-right: 0;
+	padding: 0;
+}
+
+.list-item-text{
+	color: gray;
+	font-size: 15px;
+}
+
+.list-item-text:hover, li.active{
+	color: #de3241;
+	border-bottom: 2px #de3241 solid;
+	transition:  all ease .1s;
+	cursor: pointer;
+}
+
+.book {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	text-align: center;
+	min-height: 1px;
+	padding-left: 0px;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.book-image {
+	height: 260px;
+	width: 170px;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+h3.book-title {
+	width: 170px;
+	overflow-wrap: break-word;
+}
+
+.book-title {
+	text-decoration: none;
+	font-family: "PT Sans", serif;
+	font-weight:  600;
+	line-height: 1.45em;
+	font-size: 20px;
+	color: #000;
+	margin-top: 1.4em;
+	margin-bottom: 0.5em;
+}
+
+.book-title:hover {
+	color: #de3241;
+	transition:  all ease .1s
+}
+
+.book-author {
+	color:  grey;
+	font-family: "PT Sans", sans-serif;
+	font-weight:  400;
+	line-height: 1.45em;
+	font-size: 17px;
+	margin-bottom: 0.5em;
+}
+
+.book-price {
+	color: #de3241;
+	font-family: "PT Sans", sans-serif;
+	font-weight:  600;
+	line-height: 1.45em;
+	font-size: 17px;
+}

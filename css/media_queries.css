@@ -1,0 +1,277 @@
+@media (max-width: 1250px) {
+	.preheader_text {
+		width: 100%;
+	}
+
+	.basket {
+		position: absolute;
+		right: 75px;
+	}
+
+	.search {
+		position: absolute;
+		right: 5px;
+	}
+
+	.discover-books_title::after {
+		display: none;
+	}
+
+	.footer {
+		height: unset;
+		justify-content: center;
+	}
+
+	.footer-logo-inner,
+	.find, .shop, .contacts {
+		width: 30%;
+    	margin-left: 90px;
+	}
+
+	.shop, .contacts {
+		margin-top: 30px
+	}
+
+	.books-content {
+		width: 63%;
+    	text-align: center;
+	}
+
+	.books-aside {
+		width: 30%;
+	} 
+
+	.about_title::after {
+		display: none;
+	}
+}
+
+@media (max-width:  1160px) {
+	.book-image {
+		height: 320px;
+		width: 250px;
+	}
+
+	h3.book-title {
+		width: 250px;
+	}
+
+	.books-content {
+		width: 58%;
+	}
+
+	.books-aside {
+		width: 35%;
+	} 
+
+	#popup_login.visible {
+		right: 350px;
+	}
+
+	#popup_sign.visible {
+		right: 150px;
+	}
+}
+
+@media (max-width:  1024px) {
+	.navbar {
+		margin-left: 20px;
+	}
+
+	.footer-logo-inner,
+	.find, .shop, .contacts {
+		width: 35%;
+	}
+
+	#popup_login.visible {
+		right: 300px;
+	}
+
+	#popup_sign.visible {
+		right: 150px;
+	}
+}
+
+@media (max-width: 900px) {
+	#popup_sign.visible {
+		height: 640px;
+	}
+
+	#genre_field {
+		height: 170px;
+	}
+}
+
+@media (max-width:  850px) {
+	.header {
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 150px;
+	}
+
+	.navbar {
+		margin-left: 65px;
+		margin-top: 0;
+	}
+
+	#items_counter{
+		top: 75px;
+	}
+
+	.basket, .search {
+		top: 65px
+	}
+
+	.books-content {
+		width: 50%;
+	}
+
+	.books-aside {
+		width: 40%;
+	} 
+
+	#popup_login.visible {
+		right: 205px;
+	}
+
+	#popup_sign.visible {
+		right: 140px;
+		height: 660px;
+	}
+}
+
+@media (max-width:  750px) {
+	.books-inner {
+		justify-content: center;
+	}
+
+	.books-aside,
+	.books-content,
+	.contacts-info, 
+	.message {
+		width: 90%;
+	}
+
+	.contacts-info,
+	.contact_title,
+	.message {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	#popup_login.visible {
+		right: 175px;
+	}
+
+	#popup_sign.visible {
+		right: 120px;
+	}
+}
+
+@media (max-width:  700px) {
+	.footer-logo,
+	.contacts {
+		width: 90%;
+	}
+
+	.footer-logo-inner,
+	.contacts {
+		margin-left: auto;
+    	margin-right: auto;
+    	text-align: center;
+	}
+
+	.contacts h2::after {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.find, .shop {
+		display: none;
+	}
+
+	.first_part,
+	.second_part {
+		width: 90%;
+	}
+
+	#popup_sign.visible {
+		height: 1020px;
+		right:  110px;
+	}
+}
+
+@media (max-width:  650px) {
+	#items_counter,
+	.basket, .search {
+		display: none;
+	}
+
+	.nav-list {
+		padding-right: 0;
+	}
+
+	.discover-books_title {
+		line-height: 1em;
+	}
+
+	h1.sign-up_text {
+		font-size: 3em;
+	}
+
+	.sign-up_text::after {
+		display: none;
+	}
+
+	#sign-up_btn {
+		margin-top: 20px;
+	}
+
+	#popup_login.visible {
+		right: 115px;
+	}
+
+	#popup_sign.visible {
+		right: 95px;
+	}
+}
+
+@media (max-width:  600px) {
+	.preheader_text,
+	.carousel {
+		display: none;
+	}
+	
+	.links {
+		width: 100%
+	}
+
+	#popup_login.visible {
+		right: 95px;
+	}
+
+	#popup_sign.visible {
+		right: 90px;
+	}
+}
+
+@media (max-width: 550px) {
+	#popup_login.visible {
+		right: 70px;
+	}
+
+	#popup_sign.visible {
+		right: 85px;
+	}
+}
+
+@media (max-width: 500px) {
+	#popup_login.visible {
+		right: 40px;
+	}
+
+	#popup_sign.visible {
+		right: 75px;
+	}
+}
+
